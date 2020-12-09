@@ -7,6 +7,6 @@ public class Task_3 {
         double c = scanner.nextDouble(), l = scanner.nextDouble();
         t = (2*Math.PI) * Math.sqrt(l*c);
         v = 1/t;
-        System.out.printf("Переменные C и L равны %.2f и %.2f соответсвенно\nT = %.2f\nv = %.2f", c, l, t, v);
+        System.out.printf("Переменные C и L равны %.2f и %.2f соответсвенно\nT = %.2fсек\nv = %.2fГц", c, l, t, v);
     }
 }
