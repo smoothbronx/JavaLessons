@@ -11,7 +11,7 @@ public class Task1 {
         boolean toBig = Math.pow((x - 0), 2) + Math.pow((y - 0), 2) <= Math.pow(2, 2);
         boolean toSmall = Math.pow((x + 1), 2) + Math.pow((y - 0), 2) <= Math.pow(1, 2);
         if (toBig&&!toSmall) System.out.printf("Точка с координатами x = %d, y = %d принадлежит указанной плоскости.", x, y);
-        else System.out.printf("Точка с координатами [%d, %d] не принадлежит указанной плоскости.", x, y);
+        else System.out.printf("Точка с координатами [%.2f, %.2f] не принадлежит указанной плоскости.", x, y);
     }
 }
 
