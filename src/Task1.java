@@ -5,13 +5,13 @@ public class Task1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Write your x: ");
-        int x = scanner.nextInt();
+        double x = scanner.nextDouble();
         System.out.print("Write your y: ");
-        int y = scanner.nextInt();
+        double y = scanner.nextDouble();
         boolean toBig = Math.pow((x - 0), 2) + Math.pow((y - 0), 2) <= Math.pow(2, 2);
         boolean toSmall = Math.pow((x + 1), 2) + Math.pow((y - 0), 2) <= Math.pow(1, 2);
         if (toBig&&!toSmall) System.out.printf("Точка с координатами x = %d, y = %d принадлежит указанной плоскости.", x, y);
-        else System.out.printf("Точка с координатами x = %d, y = %d не принадлежит указанной плоскости.", x, y);
+        else System.out.printf("Точка с координатами [%d, %d] не принадлежит указанной плоскости.", x, y);
     }
 }
 
