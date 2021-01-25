@@ -1,19 +1,35 @@
+// OOP
+
+import model.Rectangle;
+
+import java.util.Scanner;
+
 public class MainClass {
     public static void main(String[] args) {
-//    while (count >= 0){
-//        if (count % 100 == 0){
-//            System.out.println(count);
-//        }
-//        else {
-//            System.out.printf("%d ", count);
-//        }
-//        count--;
-//    }
-    for (int i=1; i<=9; i++) {
-        for (int j = 1; j <= 9; j++){
-            System.out.printf("%d x %d = %d\t", i, j, i*j);
-        }
-        System.out.println();
-    }
-}}
+        // Without OOP
+        Scanner scan = new Scanner(System.in);
+        double width = scan.nextDouble();
+        double height = scan.nextDouble();
+        System.out.println(width*height);
+        System.out.println(2 * (width+height));
+        System.out.println(Math.sqrt(Math.pow(height, 2)+ Math.pow(width, 2)));
+        // With OOP
+        // Used constructor of class
+        Rectangle rectangle = new Rectangle(width, height);
+/*
+        Used default class call:
 
+        model.Rectangle rectangle = new model.Rectangle();
+        rectangle.height = height;
+        rectangle.width = width;
+ */
+        rectangle.print();
+    }
+
+}
+
+// Функции
+
+// public - везде
+// private - только внутри текущего класса
+// default - внутри текущего класса и текущего пакета
